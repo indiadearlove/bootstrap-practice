@@ -6,12 +6,16 @@ body {
   color: #1CAA98 !important;
 }
 
+.col-md-4 {
+  margin-bottom: 20px;
+}
+
 section {
   padding: 40px 0 40px 0;
 }
 
 .jumbotron {
-  background: url(../img/site_showcase_bg.jpg) no-repeat top center;
+  background: #1B222A url(../img/site_showcase_bg.jpg) no-repeat top center;
   color: white;
   height: 500px;
   overflow: none;
@@ -49,7 +53,12 @@ section#feature {
 section#feature ul li {
   font-size: 22px;
   list-style: none;
-  line-height: 1.5em;
+  line-height: 2em;
+}
+
+section#feature ul {
+  padding: 0;
+  margin: 0;
 }
 
 section#title-bar {
@@ -82,4 +91,86 @@ footer a {
 
 footer p {
   float: right;
+}
+
+
+/*RESPONSIVE*/
+
+@media(max-width: 1200px) {
+
+
+
+}
+
+@media(max-width: 991px) {
+
+  .showcase-img {
+    display: none;
+  }
+  
+  .big-logo {
+    display: none;
+  }
+
+}
+
+@media(min-width: 768px) and (max-width: 990px) {
+
+  .jumbotron img.app-btn {
+    width: 30%;
+    margin-right: 30px;
+  }
+
+  .jumbotron {
+    height: 400px !important;
+    background-size: 100% 100%;
+  }
+
+  .jumbotron h1 {
+    margin-top: 10px;
+  }
+
+}
+
+@media(max-width: 768px) {
+
+  .jumbotron {
+    height: 350px !important;
+    background-size: 100% 100%;
+  }
+
+  .jumbotron h1 {
+    margin-top: 10px;
+  }
+
+}
+
+@media(max-width: 500px) {
+
+  .jumbotron {
+    height: 450px !important;
+    background-image: none;
+    text-align: center; 
+  }
+
+  .jumbotron img.app-btn {
+    width: 60%;
+    margin: 0 auto 30px auto;
+    display: block;
+  }
+
+  section#feature ul li {
+    font-size: 19px !important; 
+  }
+
+  #feature {
+    text-align: center;
+  }
+
+  footer p {
+    float: none;
+    text-align: center;
+    padding: 10px;
+  }
+
 }
