@@ -129,6 +129,22 @@ header .logo {
   line-height: 1.9em;
 }
 
+.photos {
+  margin: 0;
+  padding: 0;
+}
+
+.photos li {
+  list-style: none;
+  float: left;
+  margin: 5px;
+  width: 23%;
+}
+
+.photos img {
+  width: 100%;
+}
+
 footer {
   background: #F4F4F4;
   height: 90px;
