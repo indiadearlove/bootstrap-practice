@@ -52,6 +52,18 @@ section#feature ul li {
   line-height: 1.5em;
 }
 
+section#title-bar {
+  padding: 0;
+  margin: 0;
+  height: 80px;
+  background: #1CAA98;
+  color: white;
+}
+
+section#title-bar h1 {
+  margin-bottom: 20px;
+}
+
 footer {
   background: #333;
   color: #fff;
