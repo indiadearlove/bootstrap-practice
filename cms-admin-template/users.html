@@ -1,1 +1,178 @@
-users.html
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Users AlphaCMS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/stylesheet.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="">AlphaCMS</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="pages.html">Pages</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li class="active"><a href="users.html">Users</a></li>
+        </ul>
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown">My Account<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Profile</a></li>
+            </ul>
+          </li>
+          <li><a href="login.html">Logout</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="list-group">
+              <a href="#" class="list-group-item">
+                <i class="glyphicon glyphicon-dashboard"></i> Dashboard
+              </a>
+              <a href="#" class="list-group-item"><i class="glyphicon glyphicon-file"></i> Pages</a>
+              <a href="#" class="list-group-item"><i class="glyphicon glyphicon-folder-open"></i> Categories</a>
+              <a href="#" class="list-group-item active"><i class="glyphicon glyphicon-user"></i> User Accounts</a>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6">
+                <h1 class="page-header"><i class="glyphicon glyphicon-user"></i> Users</h1>
+              </div>
+              <div class="col-md-6">
+                <div class="btn-group actions" role="group" aria-label="...">
+                  <a href="" class="btn btn-default"><i class="glyphicon glyphicon-plus"></i> New</a>
+                  <a href="" class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i> Edit</a>
+                  <a href="" class="btn btn-default"><i class="glyphicon glyphicon-remove"></i> Delete</a>
+                </div>
+              </div>
+            </div>
+            <ol class="breadcrumb">
+              <li><a href="index.html">Dashboard</a></li>
+              <li class="active">Users</li>
+            </ol>
+            <table id="sort-table"class="table table-striped tablesorter">
+              <thead>
+                <tr>
+                  <th><input type="checkbox"></th>
+                  <th>Full Name<i class="glyphicon glyphicon-chevron-down"></i></th>
+                  <th>Email<i class="glyphicon glyphicon-chevron-down"></i></th>
+                  <th>Group<i class="glyphicon glyphicon-chevron-down"></i></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td><a href="page.html">John Doe</a></td>
+                  <td>test@test.com</td>
+                  <td>Author</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td><a href="page.html">Sarah Duffy</a></td>
+                  <td>sarah@theduffy.com</td>
+                  <td>Australia</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td><a href="page.html">Sample Page hi</a></td>
+                  <td>Category Five</td>
+                  <td>Ella</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td><a href="page.html">Sample Page seven</a></td>
+                  <td>Category Four</td>
+                  <td>Alan</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td><a href="page.html">Sas Barnard</a></td>
+                  <td>Category Six</td>
+                  <td>John</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <nav>
+              <ul class="pagination">
+                <li>
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                  <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <hr>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <footer>
+      <p>Copyright &copy; all rights reserved</p>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.tablesorter.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('#sort-table').tablesorter({
+          sortlist:[[0,0], [1,0]]
+        });
+      });
+
+    </script>
+
+  </body>
