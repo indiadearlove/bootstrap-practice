@@ -1,0 +1,21 @@
+/*Primary colour #0383C0 */
+
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar {
+  margin-bottom: 20px;
+  background: #0383C0 url(../img/navbar.png) repeat-x;
+  border: 1px #ccc solid;
+}
+
+.navbar-defult .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default a:hover {
+  background: none;
+  color: #0383C0 !important;
+  font-weight: bold;
+}
