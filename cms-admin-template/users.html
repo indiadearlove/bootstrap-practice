@@ -38,7 +38,7 @@
         </ul>
         <form class="navbar-form navbar-left" role="search">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
+            <input type="text" class="form-control search-form" placeholder="Search">
           </div>
         </form>
         <ul class="nav navbar-nav navbar-right">
@@ -75,7 +75,7 @@
               </div>
               <div class="col-md-6">
                 <div class="btn-group actions" role="group" aria-label="...">
-                  <a href="" class="btn btn-default"><i class="glyphicon glyphicon-plus"></i> New</a>
+                  <a href="user.html" class="btn btn-default"><i class="glyphicon glyphicon-plus"></i> New</a>
                   <a href="" class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i> Edit</a>
                   <a href="" class="btn btn-default"><i class="glyphicon glyphicon-remove"></i> Delete</a>
                 </div>
@@ -97,31 +97,31 @@
               <tbody>
                 <tr>
                   <td><input type="checkbox"></td>
-                  <td><a href="page.html">John Doe</a></td>
+                  <td><a href="user.html">John Doe</a></td>
                   <td>test@test.com</td>
                   <td>Author</td>
                 </tr>
                 <tr>
                   <td><input type="checkbox"></td>
-                  <td><a href="page.html">Sarah Duffy</a></td>
+                  <td><a href="user.html">Sarah Duffy</a></td>
                   <td>sarah@theduffy.com</td>
                   <td>Australia</td>
                 </tr>
                 <tr>
                   <td><input type="checkbox"></td>
-                  <td><a href="page.html">Sample Page hi</a></td>
+                  <td><a href="user.html">Sample Page hi</a></td>
                   <td>Category Five</td>
                   <td>Ella</td>
                 </tr>
                 <tr>
                   <td><input type="checkbox"></td>
-                  <td><a href="page.html">Sample Page seven</a></td>
+                  <td><a href="user.html">Sample Page seven</a></td>
                   <td>Category Four</td>
                   <td>Alan</td>
                 </tr>
                 <tr>
                   <td><input type="checkbox"></td>
-                  <td><a href="page.html">Sas Barnard</a></td>
+                  <td><a href="user.html">Sas Barnard</a></td>
                   <td>Category Six</td>
                   <td>John</td>
                 </tr>
@@ -171,6 +171,19 @@
         $('#sort-table').tablesorter({
           sortlist:[[0,0], [1,0]]
         });
+      });
+
+    </script>
+
+    <script type="text/javascript">
+      var $rows = $('table tr');
+
+      $('.search-form').keyup(function() {
+        var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
+        $rows.show().filter(function(){
+          var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
+          return !~text.indexOf(val);
+        }).hide();
       });
 
     </script>

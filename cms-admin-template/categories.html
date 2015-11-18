@@ -38,7 +38,7 @@
         </ul>
         <form class="navbar-form navbar-left" role="search">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
+            <input type="text" class="form-control search-form" placeholder="Search">
           </div>
         </form>
         <ul class="nav navbar-nav navbar-right">
@@ -75,7 +75,7 @@
               </div>
               <div class="col-md-6">
                 <div class="btn-group actions" role="group" aria-label="...">
-                  <a href="" class="btn btn-default"><i class="glyphicon glyphicon-plus"></i> New</a>
+                  <a href="category.html" class="btn btn-default"><i class="glyphicon glyphicon-plus"></i> New</a>
                   <a href="" class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i> Edit</a>
                   <a href="" class="btn btn-default"><i class="glyphicon glyphicon-remove"></i> Delete</a>
                 </div>
@@ -160,6 +160,19 @@
         $('#sort-table').tablesorter({
           sortlist:[[0,0], [1,0]]
         });
+      });
+
+    </script>
+
+    <script type="text/javascript">
+      var $rows = $('table tr');
+
+      $('.search-form').keyup(function() {
+        var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
+        $rows.show().filter(function(){
+          var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
+          return !~text.indexOf(val);
+        }).hide();
       });
 
     </script>
