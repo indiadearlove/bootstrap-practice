@@ -1,3 +1,70 @@
 body {
-  padding-top: 50px;
+  padding-top: 90px;
+}
+
+.nav {
+  margin-top: 18px;
+}
+
+.navbar {
+  min-height: 90px;
+  margin-bottom: 0 !important;
+}
+
+.navbar-brand {
+  height: auto;
+  padding-top: 15px;
+  margin: 0;
+}
+
+.navbar-nav {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.navbar-nav > li > a {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-right: 1px solid #ccc;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+
+.navbar-nav > li > a span {
+  margin: 5px 0 0 0;
+  padding: 0;
+  font-size: 14px;
+  display: block;
+  font-weight: normal;
+  font-family: arial;
+  text-transform: none;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-nav > a:hover {
+  background: #0383C0 !important;
+  color: #fff !important;
+}
+
+.jumbotron {
+  margin: 0 !important;
+  min-height: 450px;
+  background: url(../img/bg.jpg) no-repeat;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+
+.jumbotron h1 {
+  font-size: 55px;
 }
