@@ -29,30 +29,181 @@
       </div>
     </header>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
+    <div class="container container-main">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
+      </nav>
+    
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          
+          <div class="item active">
+            <img src="img/slide1.jpg" alt="slide1">
+            <div class="carousel-caption">
+              <h4><a href="post.html">Slide Story One</a></h4>
+              <p> dolor sit amet, consectetur adipiscing elit. Quisque dapibus dui augue, at feugiat quam tincidunt in. Praesent vestibulum odio libero, non condimentum dui placerat dictum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/slide2.jpg" alt="slide2">
+            <div class="carousel-caption">
+              <h4><a href="post.html">Slide Story Two</a></h4>
+              <p> ue penatibusdolor sit amet, consectetur adipiscing elit. Quisque dapibus dui augue, at feugiat quam tincidunt in. Praesent vestibulum odio libero, non condimentum dui placerat dictum. Cum sociis natoq et magnis dis parturient montes, nascetur ridiculus mus</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/slide3.jpg" alt="slide3">
+            <div class="carousel-caption">
+              <h4><a href="post.html">Slide Story Three</a></h4>
+              <p> oque pendolor sit amet, consectetur adipiscing elit. Quisque dapibus dui augue, at feugiat quam tincidunt in. Praesent vestibulum odio libero, non condimentum dui placerat dictum. Cum sociis natatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/slide4.jpg" alt="slide4">
+            <div class="carousel-caption">
+              <h4><a href="post.html">Slide Story Four</a></h4>
+              <p> feugiat quam tinciduntdolor sit amet, consectetur adipiscing elit. Quisque dapibus dui augue, at  in. Praesent vestibulum odio libero, non condimentum dui placerat dictum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/slide5.jpg" alt="slide5">
+            <div class="carousel-caption">
+              <h4><a href="post.html">Slide Story Five</a></h4>
+              <p>  consectedolor sit amet,tur adipiscing elit. Quisque dapibus dui augue, at feugiat quam tincidunt in. Praesent vestibulum odio libero, non condimentum dui placerat dictum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
+            </div>
+          </div>
+        </div>
+
+        <ul class="list-group slider-list col-md-4">
+          <li data-target="#myCarousel" data-slide-to="0" class="list-group-item active">
+            <img src="img/slide1.jpg" class="img-thumbnail img-slide">
+            <h4>Slide Story One</h4>
+            <p>sociis natoque penatibus et magnis</p>
+          </li>
+          <li data-target="#myCarousel" data-slide-to="1" class="list-group-item">
+            <img src="img/slide2.jpg" class="img-thumbnail img-slide">
+            <h4>Slide Story Two</h4>
+            <p>sociis natoque penatibus et magnis</p>
+          </li>
+          <li data-target="#myCarousel" data-slide-to="2" class="list-group-item">
+            <img src="img/slide3.jpg" class="img-thumbnail img-slide">
+            <h4>Slide Story Three</h4>
+            <p>sociis natoque penatibus et magnis</p>
+          </li>
+          <li data-target="#myCarousel" data-slide-to="3" class="list-group-item">
+            <img src="img/slide4.jpg" class="img-thumbnail img-slide">
+            <h4>Slide Story Four</h4>
+            <p>sociis natoque penatibus et magnis</p>
+          </li>
+          <li data-target="#myCarousel" data-slide-to="4" class="list-group-item">
+            <img src="img/slide5.jpg" class="img-thumbnail img-slide">
+            <h4>Slide Story Five</h4>
+            <p>sociis natoque penatibus et magnis</p>
+          </li>
+        </ul>
       </div>
-    </nav>
 
-    <section>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="well blog-post">
+            <h3><a href="post.html">Blog Post One</a></h3>
+            <p class="post-info"><i class="glyphicon glyphicon-time"></i> Posted by India Dearlove on August 31, 2015 at 10:32PM</p>
+            <hr>
+            <img src="img/blog1.jpg" class="img-responsive">
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dapibus dui augue, at feugiat quam tincidunt in. Praesent vestibulum odio libero, non</p>
+            <a href="post.html" class="btn btn-primary">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
+          </div>
+          <div class="well blog-post">
+            <h3><a href="post.html">Blog Post Two</a></h3>
+            <p class="post-info"><i class="glyphicon glyphicon-time"></i> Posted by India Dearlove on August 31, 2015 at 10:32PM</p>
+            <hr>
+            <img src="img/blog2.jpg" class="img-responsive">
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dapibus dui augue, at feugiat quam tincidunt in. Praesent vestibulum odio libero, non</p>
+            <a href="post.html" class="btn btn-primary">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
+          </div>
+          <div class="well blog-post">
+            <h3><a href="post.html">Blog Post Three</a></h3>
+            <p class="post-info"><i class="glyphicon glyphicon-time"></i> Posted by India Dearlove on August 31, 2015 at 10:32PM</p>
+            <hr>
+            <img src="img/blog3.jpg" class="img-responsive">
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dapibus dui augue, at feugiat quam tincidunt in. Praesent vestibulum odio libero, non</p>
+            <a href="post.html" class="btn btn-primary">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
+          </div>
 
-    </section>
+          <ul class="pager">
+            <li class="previous">
+              <a href="">&larr; Older</a>
+            </li>
+            <li class="next">
+              <a href="">Next &rarr;</a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-md-4">
+          <div class="well">
+            <h4>Blog Search</h4>
+            <div class="input-group">
+              <input type="text" class="form-control">
+              <span class="input-group-btn">
+                <button class="btn btn default" type="button">
+                  <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </span>
+            </div>
+          </div>
+          <div class="well">
+            <h4>Categories</h4>
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="list-unstyled">
+                  <li><a href="">Category Name</a></li>
+                  <li><a href="">Category Name</a></li>
+                  <li><a href="">Category Name</a></li>
+                  <li><a href="">Category Name</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="list-unstyled">
+                  <li><a href="">Category Name</a></li>
+                  <li><a href="">Category Name</a></li>
+                  <li><a href="">Category Name</a></li>
+                  <li><a href="">Category Name</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="well">
+            <h4>Sidebar Widget</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dapibus dui augue, at feugiat quam tincidunt in. Praesent vestibulum odio libero, non condim</p>
+          </div>
+        </div>
+      </div>    
+
+
+    </div>
+
 
 
     <!-- Bootstrap core JavaScript
@@ -60,5 +211,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
 
   </body>
